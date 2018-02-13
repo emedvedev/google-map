@@ -1,4 +1,4 @@
-import { Polymer } from '../polymer/lib/legacy/polymer-fn.js';
+import { Polymer } from '../../@polymer/polymer/lib/legacy/polymer-fn.js';
 
 function setupDragHandler_() {
   if (this.draggable) {

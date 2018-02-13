@@ -1,4 +1,4 @@
-import { Polymer } from '../polymer/lib/legacy/polymer-fn.js';
+import { Polymer } from '../../@polymer/polymer/lib/legacy/polymer-fn.js';
 import './google-map-point.js';
 
 Polymer({

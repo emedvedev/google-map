@@ -1,5 +1,5 @@
 {
-  "name": "@polymer/google-map",
+  "name": "@em-polymer/google-map",
   "flat": true,
   "version": "3.0.0-pre.1",
   "description": "Google Maps web components",
