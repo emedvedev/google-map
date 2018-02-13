@@ -22,7 +22,8 @@
   "dependencies": {
     "@polymer/polymer": "^3.0.0-pre.1",
     "@polymer/iron-resizable-behavior": "^3.0.0-pre.1",
-    "@polymer/iron-selector": "^3.0.0-pre.1"
+    "@polymer/iron-selector": "^3.0.0-pre.1",
+    "@em-polymer/google-apis": "^3.0.0-pre.1"
   },
   "devDependencies": {
     "@webcomponents/webcomponentsjs": "^1.0.0"
