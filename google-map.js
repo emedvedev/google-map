@@ -362,6 +362,16 @@ Polymer({
     },
 
     /**
+     * When true, map bounds and center change events are automatically
+     * registered.
+     */
+    boundEvents: {
+      type: Boolean,
+      value: true,
+      observer: '_boundEventsChanged',
+    },
+
+    /**
      * When true, map drag* events are automatically registered.
      */
     dragEvents: {
@@ -662,6 +672,18 @@ Polymer({
     }
   },
 
+  _boundEventsChanged() {
+    if (this.map) {
+      if (this.boundEvents) {
+        this._forwardEvent('center_changed');
+        this._forwardEvent('bounds_changed');
+      } else {
+        this._clearListener('center_changed');
+        this._clearListener('bounds_changed');
+      }
+    }
+  },
+
   _clickEventsChanged() {
     if (this.map) {
       if (this.clickEvents) {
@@ -799,6 +821,7 @@ Polymer({
     });
 
     this._clickEventsChanged();
+    this._boundEventsChanged();
     this._dragEventsChanged();
     this._mouseEventsChanged();
     this._idleEvent();
