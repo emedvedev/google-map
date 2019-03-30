@@ -1,4 +1,5 @@
 import { Polymer } from '../polymer/lib/legacy/polymer-fn.js';
+import { html } from '../polymer/lib/utils/html-tag.js';
 import './google-map-marker.js';
 import './../google-apis/google-maps-api.js';
 
@@ -57,7 +58,7 @@ If you're seeing the message "You have included the Google Maps API multiple tim
 @demo demo/kml.html
 */
 Polymer({
-  _template: `
+  _template: html`
     <style>
       :host {
         position: relative;

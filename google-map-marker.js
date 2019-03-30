@@ -1,4 +1,5 @@
 import { Polymer } from '../polymer/lib/legacy/polymer-fn.js';
+import { html } from '../polymer/lib/utils/html-tag.js';
 
 function setupDragHandler_() {
   if (this.draggable) {
@@ -15,7 +16,7 @@ function onDragEnd_(e, details, sender) {
 }
 
 Polymer({
-  _template: `
+  _template: html`
     <style>
       :host {
         display: none;

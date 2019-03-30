@@ -1,8 +1,9 @@
 import { Polymer } from '../polymer/lib/legacy/polymer-fn.js';
+import { html } from '../polymer/lib/utils/html-tag.js';
 import './google-map-point.js';
 
 Polymer({
-  _template: `
+  _template: html`
     <style>
       :host {
         display: none;

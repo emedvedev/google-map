@@ -1,4 +1,5 @@
 import { Polymer } from '../polymer/lib/legacy/polymer-fn.js';
+import { html } from '../polymer/lib/utils/html-tag.js';
 /* Copyright (c) 2015 Google Inc. All rights reserved. */
 /*
 Provides the Google Maps API Directions Service to provide directions
@@ -21,7 +22,7 @@ information on the API.
 
 */
 Polymer({
-  _template: `
+  _template: html`
     <style>
       :host {
         display: none;
